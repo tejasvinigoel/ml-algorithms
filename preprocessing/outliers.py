@@ -25,3 +25,5 @@ outliers = titanic_df['fare'][
 mean = np.mean(titanic_df['fare']) # calculates the mean
 standard_deviation = np.std(titanic_df['fare']) # calculates the standard deviation
 outliers = titanic_df['fare'][np.abs(titanic_df['fare'] - mean) > 3 * standard_deviation] # finds all the data points that are 3 standard deviations away from the mean
+
+#handling--> drop, cap or transform (log)

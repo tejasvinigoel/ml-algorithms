@@ -20,7 +20,7 @@ titanic_df['embark_town'].fillna(most_common_embark_town, inplace=True)
 
 
 # Drop a column with too many missing values ('deck' has a lot of missing data)
-titanic.drop(columns=['deck'], inplace=True)
+titanic_df.drop(columns=['deck'], inplace=True)
 
 # Verify that missing data has been handled
 missing_values_after = titanic_df.isnull().sum()
